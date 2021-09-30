@@ -1,0 +1,37 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+.container .map-container {
+  width: 50%;
+}
+.container .map-container #map {
+  width: 800px;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+.container .controls {
+  width: 50%;
+}
+.container .controls table,
+.container .controls tr,
+.container .controls th,
+.container .controls td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.container .controls th,
+.container .controls td {
+  padding: 10px;
+}
+.container .controls th {
+  width: 160px;
+}
+.container .controls td input {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,44 @@
+ul {
+	list-style: none;
+	padding   : 0;
+	margin    : 0;
+}
+
+.container {
+	display: flex;
+
+	.map-container {
+		width: 50%;
+
+		#map {
+			width : 800px;
+			height: 600px;
+			border: 1px solid #ccc;
+		}
+	}
+
+	.controls {
+		width: 50%;
+
+		table,
+		tr,
+		th,
+		td {
+			border         : 1px solid #000;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 10px;
+		}
+
+		th {
+			width: 160px
+		}
+
+		td input {
+			width: 100%;
+		}
+	}
+}

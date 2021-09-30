@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Leaflet Map</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Css -->
+	<link rel="stylesheet" href="./node_modules/leaflet-rotate-map/leaflet.css">
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="map-container">
+			<div id="map" style="height: 500px;"></div>
+		</div>
+
+		<div class="controls">
+			<div>
+				<h3>Actions</h3>
+				<ul>
+					<li><button id="add_marker">Add Marker</button></li>
+					<li><button id="delete_marker">Delete Marker</button></li>
+					<li><button id="edit_marker">Edit Marker</button></li>
+					<li><button id="move_marker">Move Marker</button></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>DB List with markers</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Lat</th>
+							<th>Lng</th>
+							<th>Title</th>
+							<th>Icon</th>
+							<th>Icon size</th>
+							<th>Zoom</th>
+							<th>Rotate degress</th>
+						</tr>
+					</thead>
+					<tbody id="markers_tbl"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Js -->
+	<script src="./node_modules/leaflet-rotate-map/leaflet-src.js"></script>
+	<script src="./js/route.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
